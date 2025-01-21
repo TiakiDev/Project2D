@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cd7ded86f2d41488ddc4bc81d3824f, type: 3}
+  m_Name: coffe
+  m_EditorClassIdentifier: 
+  itemName: Hot coffe
+  itemIcon: {fileID: 21300000, guid: c99e06e8d1e7e15438676b679c5c94df, type: 3}
+  maxStackSize: 6
+  description: "A bold brew that energizes the body and sharpens the mind\u2014use
+    wisely!"
+  itemType: 1
+  statToChange: 3
+  statValue: 5
+  vendingPrice: 2
