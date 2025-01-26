@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86cd7ded86f2d41488ddc4bc81d3824f, type: 3}
-  m_Name: clock
+  m_Name: heartCrystal
   m_EditorClassIdentifier: 
-  itemName: Pocket watch
-  itemIcon: {fileID: 21300000, guid: 33c1ad9aa1b4e3b48b10d3218354abb0, type: 3}
-  maxStackSize: 1
-  description: A worn pocket watch that boosts the wearer's speed, allowing for swift
-    actions in critical moments.
+  itemName: Heart crystal
+  itemIcon: {fileID: 21300000, guid: 1363a28e6b6c07a46b565461f5d70d1b, type: 3}
+  maxStackSize: 0
+  description: This mysterious gem boosts your life force, permanently increasing
+    your maximum health and enhancing your endurance in battle.
   itemType: 2
-  statToChange: 3
-  statValue: 8
-  vendingPrice: 15
+  statToChange: 1
+  statValue: 10
+  vendingPrice: 55

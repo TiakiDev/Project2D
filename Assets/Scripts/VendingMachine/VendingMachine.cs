@@ -78,7 +78,10 @@ public class VendingMachine : MonoBehaviour
             playerInRange = null; // Usuwamy referencję, gdy gracz opuszcza zasięg
             menuActivated = false;
             vendingCanvas.SetActive(false);
-            VendingTooltipManager.instance.canvasGroup.alpha = 0;
+            if (VendingTooltipManager.instance != null)
+            {
+                VendingTooltipManager.instance.canvasGroup.alpha = 0;
+            }
         }
     }
     

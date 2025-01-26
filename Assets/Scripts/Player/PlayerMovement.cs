@@ -82,6 +82,8 @@ public class PlayerMovement : MonoBehaviour
             ghostAnimator.SetFloat("LastInputX", lastGhostDirection.x);
             ghostAnimator.SetFloat("LastInputY", lastGhostDirection.y);
         }
+
+        speed = StatsManager.instance.speed;
     }
 
     // Metoda do zaokrąglania kierunku do głównych osi
