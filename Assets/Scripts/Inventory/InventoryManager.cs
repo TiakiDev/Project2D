@@ -65,14 +65,26 @@ public class InventoryManager : MonoBehaviour
             instance = this;
         }
     }
+    
 
     private void Start()
     {
         //* wybiera pierwszy slot na starcie gry aby zpobiec błędom
         //* idk moze potem wymyslisz lepsze rozwiązanie
         
-        hotbarSlots[0].OnPointerClick(null);
+        StartCoroutine(SelectSlot());
     }
+
+    private IEnumerator SelectSlot()
+    {
+        yield return new WaitForSeconds(0.1f);
+        hotbarSlots[0].SelectSlot();
+    }
+
+
+    
+    
+
 
     private void Update()
     {
@@ -104,6 +116,5 @@ public class InventoryManager : MonoBehaviour
 
     }
     
-    
-    
+
 }

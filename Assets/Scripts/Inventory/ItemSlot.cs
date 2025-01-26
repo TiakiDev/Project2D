@@ -33,6 +33,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
         
         UpdateQuantityText();
     }
+
     
     private void RemoveItem(int amount)
     {

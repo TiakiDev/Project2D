@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -26,9 +25,7 @@ public class HotbarSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        InventoryManager.instance.DeselectAllSlots();
-        selectedShader.SetActive(true);
-        isSelected = true;
+        SelectSlot();
     }
 
     private void Update()
@@ -46,5 +43,12 @@ public class HotbarSlot : MonoBehaviour, IPointerClickHandler
             weaponSpriteSR.sprite = itemSlot.nullImage;
             PlayerAttack.instance.canAttack = false;
         }
+    }
+
+    public void SelectSlot()
+    {
+        InventoryManager.instance.DeselectAllSlots();
+        selectedShader.SetActive(true);
+        isSelected = true;
     }
 }

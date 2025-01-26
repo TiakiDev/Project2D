@@ -90,11 +90,14 @@ public class VendingMachine : MonoBehaviour
             vendingCanvas.SetActive(true);
             VendingTooltipManager.instance.canvasGroup.alpha = 0;
         }
-        else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab) && menuActivated)
+        else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape) && menuActivated || Input.GetKeyDown(KeyCode.Tab) && menuActivated)
         {
             menuActivated = false;
             vendingCanvas.SetActive(false);
-            VendingTooltipManager.instance.canvasGroup.alpha = 0;
+            if (VendingTooltipManager.instance != null)
+            {
+                VendingTooltipManager.instance.canvasGroup.alpha = 0;
+            }
         }
 
         if (itemsInVendingMachine.All(GameObject => GameObject == null))

@@ -12,6 +12,7 @@ public class StatsManager : MonoBehaviour
     public Slider speedBar;
     public TMP_Text speedText;
     public TMP_Text coinsText;
+    public List<TMP_Text> coinsTextList;
     
     public float maxHealth = 100;
     public float currentHealth = 100;
@@ -38,19 +39,6 @@ public class StatsManager : MonoBehaviour
         UpdateUI();
     }
     
-    public void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
-        UpdateUI();
-    }
-    
-    public void Heal(float amount)
-    {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); //jak ma max życia to nie leczy więcej
-        UpdateUI();
-    }
-    
     public void ChangeStat(float amount, ItemSO.StatType statType)
     {
         switch (statType)
@@ -62,7 +50,8 @@ public class StatsManager : MonoBehaviour
                 speed += amount;
                 PlayerMovement.instance.speed = speed;
                 break;
-            default:
+            case ItemSO.StatType.Defense:
+                //tutaj se wpisujesz co się będzie działo kiedy użyje przedmiotu z tym typem statType
                 break;
         }
         UpdateUI();
@@ -76,6 +65,9 @@ public class StatsManager : MonoBehaviour
         
         speedBar.value = speed;
         speedText.text = speed.ToString();
-        coinsText.text = coins.ToString();
+        foreach (var text in coinsTextList)
+        {
+            text.text = coins.ToString();
+        }
     }
 }

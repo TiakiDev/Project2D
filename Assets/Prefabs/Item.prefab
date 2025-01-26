@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c99e06e8d1e7e15438676b679c5c94df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e140f9c9eee14b44aabcab9b25b3357, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -224,8 +224,8 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7610759617037688582}
   - {fileID: 5598059152237938210}
+  - {fileID: 7610759617037688582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3706940614784399319
@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf73b22e79af99d4ebcc0f3297465d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: e6aae7736d3bb9f4596b9654abada1f5, type: 2}
-  quantity: 1
+  item: {fileID: 11400000, guid: 8ec3aa59d6602ef46b740c2efac3df81, type: 2}
+  quantity: 2
   icon: {fileID: 0}
   itemName: 
   description: 

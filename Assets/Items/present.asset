@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Present box
   itemIcon: {fileID: 21300000, guid: 1e140f9c9eee14b44aabcab9b25b3357, type: 3}
-  maxStackSize: 1
+  maxStackSize: 2
   description: A beautifully wrapped box filled with surprises! Perfect for special
     occasions or unexpected gifts.
   itemType: 1
